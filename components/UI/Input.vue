@@ -2,7 +2,7 @@
 const emits = defineEmits(["update:modelValue"]);
 
 const props = defineProps({
-  value: {
+  modelValue: {
     type: String,
     required: true,
   },
@@ -13,6 +13,10 @@ const props = defineProps({
   label: {
     type: String,
     default: null,
+  },
+  type: {
+    type: String,
+    default: "text",
   },
 });
 </script>
